@@ -28,17 +28,20 @@ function mapTileChange() {
     }).addTo(map);
 }
 
-var newIcon = L.icon({
-    iconUrl: 'pin1.png',
-    iconSize: [60, 60],
-    iconAnchor: [30, 60],
-    popupAnchor: [-3, -76],
-  });
+var greenIcon = L.icon({
+    iconUrl: './img/leaf-green.png',
+    iconSize:     [38, 95], // size of the icon
+    shadowSize:   [50, 64], // size of the shadow
+    iconAnchor:   [22, 94], // point of the icon which will correspond to marker's location
+    shadowAnchor: [4, 62],  // the same for the shadow
+    popupAnchor:  [-3, -76] // point from which the popup should open relative to the iconAnchor
+});
+
 
 map.on('dblclick', function (e) {
     let latLng = map.mouseEventToLatLng(e.originalEvent);
     console.log(latLng);
-    L.marker([latLng.lat, latLng.lng], { icon: newIcon }).addTo(map);
+    L.marker([latLng.lat, latLng.lng], { icon: greenIcon }).addTo(map);
     totMarks++
     console.log(`Total de marcadores: ${totMarks}`);
     eachThree(totMarks);
@@ -50,9 +53,9 @@ function eachThree(number) {
         console.log(changeIcon);
     }
     if(changeIcon){
-        newIcon.options.iconUrl = "pin2.png";
+        greenIcon.options.iconUrl = "pin2.png";
     } else {
-        newIcon.options.iconUrl = "pin1.png";
+        greenIcon.options.iconUrl = "pin1.png";
     }
 }
 
