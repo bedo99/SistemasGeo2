@@ -55,7 +55,7 @@ function eachThree(number) {
     if(changeIcon){
         greenIcon.options.iconUrl = "./img/PIN2Local.png";
     } else {
-        greenIcon.options.iconUrl = "./img/PINTrebol.png";
+        greenIcon.options.iconUrl = "./img/leaf-green.png";
     }
 }
 
