@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <title>Sistemas Geo-referenciados</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- Font Awesome JS -->
+    <script src="https://kit.fontawesome.com/200375b2ae.js" crossorigin="anonymous"></script>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.js"
+        integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+
+<body>
+
+    <div class="wrapper">
+
+        <!-- Sidebar  -->
+        <nav id="sidebar">
+            <div class="sidebar-header">
+                <h3>Sistemas</h3>
+                <h3>Geo-referenciados</h3>
+                <strong>SG</strong>
+            </div>
+            <ul class="list-unstyled components">
+                <li class="active">
+                    <a href="index.html" ><i class="fab fa-google"></i>Google Maps</a>
+                </li>
+                <li>
+                    <a href="index-4.html" ><i class="fab fa-bootstrap"></i>Inspinia</a>
+                </li>
+                <li>
+                    <a href="#pageSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
+                        <i class="fas fa-database"></i>Firebase</a>
+                    <ul class="collapse list-unstyled" id="pageSubmenu">
+                        <li>
+                            <a href="index-1.html">CRUD</a>
+                            <a href="index-2.html">OAuth</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="index-3.html"><i class="fab fa-js"></i>Fetch</a>
+                </li>
+            </ul>
+        </nav>
+
+        <!-- Page Content  -->
+        <div id="content">
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <div class="container-fluid">
+                    <button type="button" id="sidebarCollapse" class="btn btn-secondary">
+                        <i class="fas fa-align-left"></i>
+                    </button>
+                    <h1>Google Maps</h1>
+                </div>
+            </nav>
+
+            <div class="main_container">
+                <div class="contenedor">
+                    <div class="numberlist">
+                        <ol>
+                            <li><a href="practica01.html">Google Maps con Bootstrap</a></li>
+                            <li><a href="practica02.html">Navigator</a></li>
+                            <li><a href="practica03.html">Coordenadas</a></li>
+                            <li><a href="practica04.html">Imagen Mapa</a></li>
+                            <li><a href="practica05.html">InfoWindow</a></li>
+                            <li><a href="practica06.html">Localización Tiempo Real</a></li>
+                            <li><a href="practica07.html">Google Maps Clustering</a></li>
+                            <li><a href="practica08.html">Google Maps Idioma</a></li>
+                            <li><a href="practica09.html">Google Maps Estilos</a></li>
+                            <li><a href="practica10.html">WatchPosition</a></li>
+                            <li><a href="practica11.html">Maps Controllers</a></li>
+                            <li><a href="practica12.html">Maps Events</a></li>
+                            <li><a href="practica13.html">Google Maps Places</a></li>
+                            <li><a href="practica14.html">Google Maps Geocoding</a></li>
+                            <li><a href="practica15.html">Google Maps Shapes</a></li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('#sidebarCollapse').on('click', function () {
+                $('#sidebar').toggleClass('active');
+            });
+        });
+    </script>
+</body>
+
+</html>
