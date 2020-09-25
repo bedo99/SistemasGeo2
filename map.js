@@ -53,9 +53,9 @@ function eachThree(number) {
         console.log(changeIcon);
     }
     if(changeIcon){
-        greenIcon.options.iconUrl = "pin2.png";
+        greenIcon.options.iconUrl = "https://vignette.wikia.nocookie.net/clubpenguin/images/5/52/652px-Shamrock_Pin.png/revision/latest/scale-to-width-down/340?cb=20120624175656&path-prefix=es";
     } else {
-        greenIcon.options.iconUrl = "pin1.png";
+        greenIcon.options.iconUrl = "https://image.flaticon.com/icons/png/512/67/67872.png";
     }
 }
 
